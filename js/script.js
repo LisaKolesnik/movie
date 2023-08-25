@@ -2,7 +2,7 @@ const btnAll = document.getElementsByClassName("btnAll")
 
 let j = 0;
 
-fetch('../js/data.json')
+fetch('../data.json')
   .then((response) => response.json())
   .then((json) => {
     if (window.innerWidth > 577) {
@@ -41,7 +41,7 @@ fetch('../js/data.json')
 
 
 function btnadd() {
-  fetch('../js/data.json')
+  fetch('../data.json')
     .then((response) => response.json())
     .then((json) => {
       if (window.innerWidth > 577) {
